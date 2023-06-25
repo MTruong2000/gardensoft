@@ -1,0 +1,11 @@
+D:\GardenSoft\GardenSoft\bin\Debug\GardenSoft.exe.config
+D:\GardenSoft\GardenSoft\bin\Debug\GardenSoft.exe
+D:\GardenSoft\GardenSoft\bin\Debug\GardenSoft.pdb
+D:\GardenSoft\GardenSoft\obj\Debug\GardenSoft.csproj.AssemblyReference.cache
+D:\GardenSoft\GardenSoft\obj\Debug\GardenSoft.csproj.SuggestedBindingRedirects.cache
+D:\GardenSoft\GardenSoft\obj\Debug\GardenSoft.Form1.resources
+D:\GardenSoft\GardenSoft\obj\Debug\GardenSoft.Properties.Resources.resources
+D:\GardenSoft\GardenSoft\obj\Debug\GardenSoft.csproj.GenerateResource.cache
+D:\GardenSoft\GardenSoft\obj\Debug\GardenSoft.csproj.CoreCompileInputs.cache
+D:\GardenSoft\GardenSoft\obj\Debug\GardenSoft.exe
+D:\GardenSoft\GardenSoft\obj\Debug\GardenSoft.pdb
