@@ -3,13 +3,33 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.IO;
+using GardenSoft.views;
+using System.Runtime.Remoting.Messaging;
 
 namespace GardenSoft
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form, IKH
     {
         private string conStr = "Server=DESKTOP-AH3TGNG;Database=QLKH;Trusted_Connection=True;";
         List<string> maIDList = new List<string>();
+
+        public string MaID {get{ return txtMaID.Text; } set { txtMaID.Text = value; } }
+        public string Ten { get { return txtTen.Text; } set { txtTen.Text = value; } }
+        public DateTime NgaySinh { get { return dtPickerNgaySinh.Value; } set { dtPickerNgaySinh.Value = value; } }
+        public string DiaChi { get { return txtDiaChi.Text; } set { txtDiaChi.Text = value; } }
+        public string PassPort { get { return txtPassPort.Text; } set { txtPassPort.Text = value; } }
+        public DateTime NgayCap { get { return dtPickerNgayCap.Value; } set { dtPickerNgayCap.Value = value; } }
+        public string DienThoai { get { return txtDienThoai.Text; } set { txtDienThoai.Text = value; } }
+        public string DiDong { get { return txtDiDong.Text; } set { txtDiDong.Text = value; } }
+        public string Fax { get { return txtFax.Text; } set { txtFax.Text = value; } }
+        public string Email { get { return txtEmail.Text; } set { txtEmail.Text = value; } }
+        public string TaiKhoanNH { get { return txtTKNH.Text; } set { txtTKNH.Text = value; } }
+        public string TenNH { get { return txtTNH.Text; } set { txtTNH.Text = value; } }
+        public string LoaiKH {
+            get { return cbbLKH.SelectedItem.ToString(); }
+            set { cbbLKH.SelectedIndex = cbbLKH.FindString(value); }
+        }
+        public string HanTT { get { return txtHTT.Text; } set { txtHTT.Text = value; } }
 
         public Form1()
         {
@@ -80,20 +100,20 @@ namespace GardenSoft
 
                         using (SqlCommand comm = new SqlCommand(sqlStr, con))
                         {
-                            comm.Parameters.AddWithValue("@MaID", txtMaID.Text);
-                            comm.Parameters.AddWithValue("@Ten", txtTen.Text);
-                            comm.Parameters.AddWithValue("@NgaySinh", dtPickerNgaySinh.Value);
-                            comm.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
-                            comm.Parameters.AddWithValue("@PassPort", txtPassPort.Text);
-                            comm.Parameters.AddWithValue("@NgayCap", dtPickerNgayCap.Value);
-                            comm.Parameters.AddWithValue("@DienThoai", txtDienThoai.Text);
-                            comm.Parameters.AddWithValue("@DiDong", txtDiDong.Text);
-                            comm.Parameters.AddWithValue("@Fax", txtFax.Text);
-                            comm.Parameters.AddWithValue("@Email", txtEmail.Text);
-                            comm.Parameters.AddWithValue("@TaiKhoanNH", txtTKNH.Text);
-                            comm.Parameters.AddWithValue("@TenNH", txtTNH.Text);
-                            comm.Parameters.AddWithValue("@LoaiKH", cbbLKH.SelectedItem.ToString());
-                            comm.Parameters.AddWithValue("@HanTT", txtHTT.Text);
+                            comm.Parameters.AddWithValue("@MaID", MaID);
+                            comm.Parameters.AddWithValue("@Ten", Ten);
+                            comm.Parameters.AddWithValue("@NgaySinh", NgaySinh);
+                            comm.Parameters.AddWithValue("@DiaChi", DiaChi);
+                            comm.Parameters.AddWithValue("@PassPort", PassPort);
+                            comm.Parameters.AddWithValue("@NgayCap", NgayCap);
+                            comm.Parameters.AddWithValue("@DienThoai", DienThoai);
+                            comm.Parameters.AddWithValue("@DiDong", DiDong);
+                            comm.Parameters.AddWithValue("@Fax", Fax);
+                            comm.Parameters.AddWithValue("@Email", Email);
+                            comm.Parameters.AddWithValue("@TaiKhoanNH", TaiKhoanNH);
+                            comm.Parameters.AddWithValue("@TenNH", TenNH);
+                            comm.Parameters.AddWithValue("@LoaiKH", LoaiKH);
+                            comm.Parameters.AddWithValue("@HanTT", HanTT);
 
                             comm.ExecuteNonQuery();
                         }
@@ -102,6 +122,17 @@ namespace GardenSoft
                         MessageBox.Show("Bạn đã thêm thành công!!!");
                         txtMaID.Text = "";
                         txtTen.Text = "";
+                        dtPickerNgaySinh.Value = DateTime.Now;
+                        txtDiaChi.Text = "";
+                        txtPassPort.Text = "";
+                        dtPickerNgayCap.Value = DateTime.Now;
+                        txtDienThoai.Text = "";
+                        txtDiDong.Text = "";
+                        txtFax.Text = "";
+                        txtEmail.Text = "";
+                        txtTKNH.Text = "";
+                        txtTNH.Text = "";
+                        txtHTT.Text = "";
                     }
                 }
             }
