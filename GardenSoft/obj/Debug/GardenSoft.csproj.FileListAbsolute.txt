@@ -9,3 +9,15 @@ D:\GardenSoft\GardenSoft\obj\Debug\GardenSoft.csproj.GenerateResource.cache
 D:\GardenSoft\GardenSoft\obj\Debug\GardenSoft.csproj.CoreCompileInputs.cache
 D:\GardenSoft\GardenSoft\obj\Debug\GardenSoft.exe
 D:\GardenSoft\GardenSoft\obj\Debug\GardenSoft.pdb
+C:\Users\rikai-minhtruong\Desktop\gardensoft\GardenSoft\bin\Debug\GardenSoft.exe.config
+C:\Users\rikai-minhtruong\Desktop\gardensoft\GardenSoft\bin\Debug\GardenSoft.exe
+C:\Users\rikai-minhtruong\Desktop\gardensoft\GardenSoft\bin\Debug\GardenSoft.pdb
+C:\Users\rikai-minhtruong\Desktop\gardensoft\GardenSoft\obj\Debug\GardenSoft.csproj.AssemblyReference.cache
+C:\Users\rikai-minhtruong\Desktop\gardensoft\GardenSoft\obj\Debug\GardenSoft.csproj.SuggestedBindingRedirects.cache
+C:\Users\rikai-minhtruong\Desktop\gardensoft\GardenSoft\obj\Debug\GardenSoft.Form1.resources
+C:\Users\rikai-minhtruong\Desktop\gardensoft\GardenSoft\obj\Debug\GardenSoft.Properties.Resources.resources
+C:\Users\rikai-minhtruong\Desktop\gardensoft\GardenSoft\obj\Debug\GardenSoft.csproj.GenerateResource.cache
+C:\Users\rikai-minhtruong\Desktop\gardensoft\GardenSoft\obj\Debug\GardenSoft.csproj.CoreCompileInputs.cache
+C:\Users\rikai-minhtruong\Desktop\gardensoft\GardenSoft\obj\Debug\GardenSoft.exe
+C:\Users\rikai-minhtruong\Desktop\gardensoft\GardenSoft\obj\Debug\GardenSoft.pdb
+C:\Users\rikai-minhtruong\Desktop\gardensoft\GardenSoft\obj\Debug\GardenSoft.csproj.ResolveComReference.cache
